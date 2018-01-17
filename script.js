@@ -79,3 +79,19 @@ $("document").ready(function(){
 	});
 
 });
+
+
+const search = document.querySelector('#search');
+const searchIcon = document.querySelector('.fa-search');
+
+search.addEventListener('click', () => {
+		search.style.boxShadow = 'none';
+		search.placeholder = '';
+		searchIcon.style.display = 'none';
+});
+
+search.addEventListener('mouseout', () => {
+	search.style.boxShadow = '0px 0px 6px 2px rgba(185, 189, 106, 0.52)';
+		search.placeholder = 'search user';
+		searchIcon.style.display = 'inline';
+});
