@@ -1,7 +1,7 @@
 body {
   background-color: whitesmoke;;
   box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
+ font-family: 'Montserrat', sans-serif;
 }
 
 .main {
@@ -17,7 +17,7 @@ body {
 }
 
 .header div {
-  padding: 20px 40px;
+  padding: 10px 40px;
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
@@ -28,37 +28,58 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 110px;
   
 }
-
+img {
+  height: 100px;
+}
 section {
   border: 1px solid whitesmoke;
-  width: 40%;
+  width: 45%;
   margin: 0 auto;
   height: auto;
-  background-color: #242424;
+  background-color: #6441a4;;
   color: whitesmoke;
+  border-radius: 25px;
+}
+
+.button {
+  transition: all 0.3s ease; 
+  border-radius: 25px;
+  text-align: center;
+  width: 100px;
+}
+
+.button:hover {
+  border: 1px solid silver;
+  color: silver;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 6px 2px rgba(185, 189, 106, 0.52);
+  border-radius: 25px;
 }
 
 .search {
   padding: 10px;
-  position: relative;
   text-align: center;
+  width: 40%;
 }
 
 .search span {
   position: absolute;
-  color: #242424;
-  padding: 8px;
+  color: silver;
+  padding: 7px;
 }
 
 .search input {
-  border-radius: 14px;
+  border-radius: 50px;
+  border: 1px solid silver;
   height: 25px;
   outline: none;
-  width: 80%;
+  width: 70%;
   text-align: center;
   transition: all 0.3s ease;
+  box-shadow: 0px 0px 6px 2px rgba(185, 189, 106, 0.52);
 }
 
 input:hover {
